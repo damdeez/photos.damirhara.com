@@ -1,0 +1,81 @@
+@import 'normalize'
+@import 'helper'
+
+/* variables */
+$lightgrey = #999999
+$linkColor = #555555
+$grey = #eeeeee
+$black = #222222
+$offwhite = #f7f7f7
+$white = #ffffff
+
+html
+button
+input
+select
+textarea
+  color: $black
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+
+body
+  color: $black
+  font-size: 1em
+  line-height: 1.5
+  font-family: helvetica, verdana, sans-serif
+
+header
+  background: $white
+  color: $black
+  padding: 1em
+  border-bottom: 1px solid $grey
+  position: fixed
+  width: 100%
+  top: 0
+  right: 0
+  //opacity: 0.5
+  max-height: 60px
+  a
+    color: $black
+    font-weight: lighter
+    &:hover, &.active
+      color: lighten($black,15%)
+      border-bottom: 1.5px solid $black
+  h1, h2
+    font-size: 20px
+    font-weight: 100
+    display: inline
+  h2
+    font-weight: bold
+  nav
+    float: right
+    user-select: none
+  .nav-item
+    float: left
+    margin-left: 1em
+    margin-top: 0.2em
+    &:last-child
+      margin-right: 2em
+
+.content
+  .about
+    margin: 60px 20px 0 20px
+    font-weight: lighter
+    color: $black
+  .main-container
+    margin-top: 60px
+    .loading-label
+      margin: 100px 0 0 0
+      text-align: center
+    ul.image-container
+      padding: 0
+      margin: 0 auto
+      li
+        text-align: center
+      img
+        width: 100%
+        max-width: 1000px
