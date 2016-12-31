@@ -1,8 +1,13 @@
 import React from 'react';
 
 const ItemList = (props) => {
-    let items = props.items.map(item => <li key={ item }><img src={ item } ></img></li>),
-        loading = props.loading ? <div className="loading-label">Loading...</div> : '';
+    let items = [];
+    let loading = [];
+
+    props.items.map((item, index) => {
+      items.push(<li key={ index }><img src={ item } ></img></li>);
+      loading = props.loading ? <div className="loading-label">Loading...</div> : '';
+    });
 
     return (
       <div>

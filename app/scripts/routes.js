@@ -2,13 +2,13 @@ import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import createHistory from 'history/lib/createHashHistory'
 
-import App from './pages/app.jsx';
-import Home from './pages/home.jsx';
-import Info from './pages/info.jsx';
-import NotFound from './pages/notFound.jsx';
+import App from './pages/app';
+import Home from './pages/home';
+import Info from './pages/info';
+import NotFound from './pages/notFound';
 
 const historyOptions = {
-  queryKey : false
+  queryKey: false
 };
 
 const routes = (
